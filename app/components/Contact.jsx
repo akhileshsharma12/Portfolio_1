@@ -103,7 +103,7 @@ const Contact = () => {
 
                         {/* reCAPTCHA widget */}
                         <HCaptcha
-                            sitekey="" 
+                            sitekey="7174caaa-d6e6-43da-83b8-28c6f7f2369a" 
                             onVerify={setToken}
                             ref={hcaptchaRef}
                         />
