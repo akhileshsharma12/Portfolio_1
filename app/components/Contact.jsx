@@ -1,24 +1,41 @@
 "use client";
-import React, { useState } from "react";
-import ReCAPTCHA from 'react-google-recaptcha';
+import React, { useRef, useState } from "react";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 const Contact = () => {
 
-    const [captchaValue, setCaptchaValue] = useState(null);
+    const hcaptchaRef = useRef(null);
+    const [token, setToken] = useState("");
 
-    const handleCaptchaChange = (value) => {
-        setCaptchaValue(value);
-        console.log('Captcha value:', value);
-    };
-
-    const handleSubmit = (e) => {
+    const handleFormSubmit = async (e) => {
         e.preventDefault();
-        if (!captchaValue) {
-            alert('Please complete the reCAPTCHA!');
+
+        if (!token) {
+            alert("Please complete the hCaptcha!");
             return;
         }
-        // Process your form here
-        alert('Form submitted successfully!');
+
+        const formData = new FormData(e.target);
+
+        formData.append("access_key", "fcfb63fb-44a3-4b2c-a20e-f6d05f1f98f2");
+        formData.append("h-captcha-response", token);
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            alert("Form Submitted Successfully");
+            e.target.reset();
+            setToken("");
+            hcaptchaRef.current.resetCaptcha();
+        } else {
+            console.log("Error", data);
+            alert("Error Submitting Form");
+        }
     };
 
     return (
@@ -58,7 +75,7 @@ const Contact = () => {
 
                 {/* Right - Contact Form */}
                 <div className="flex-1">
-                    <form className="space-y-4" onSubmit={handleSubmit}>
+                    <form className="space-y-4" onSubmit={handleFormSubmit}>
                         <div>
                             <label className="block text-sm mb-1">Name</label>
                             <input
@@ -85,9 +102,10 @@ const Contact = () => {
                         </div>
 
                         {/* reCAPTCHA widget */}
-                        <ReCAPTCHA
-                            sitekey="6LdOHo8rAAAAAGjI5tYi_PpFLYeFH18isCR8yeVm" 
-                            onChange={handleCaptchaChange}
+                        <HCaptcha
+                            sitekey="" 
+                            onVerify={setToken}
+                            ref={hcaptchaRef}
                         />
 
                         <button
