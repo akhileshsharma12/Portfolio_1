@@ -4,7 +4,6 @@ import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 const Contact = () => {
 
-    const hcaptchaRef = useRef(null);
     const [token, setToken] = useState("");
 
     const handleFormSubmit = async (e) => {
@@ -39,7 +38,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="bg-[#021526] text-white py-15 px-6 md:px-20" id="contact">
+        <section id="contact-section" className="bg-[#021526] text-white py-15 px-6 md:px-20">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10">
                 {/* Left - Contact Info */}
                 <div className="flex-1 space-y-6">
@@ -67,7 +66,7 @@ const Contact = () => {
                             <i className="fab fa-linkedin text-xl text-sky-400"></i>
                             <div>
                                 <h4 className="font-semibold">LinkedIn</h4>
-                                <p className="text-sm text-gray-400">linkedin.com/in/jdfjdfhefj</p>
+                                <a href="https://www.linkedin.com/in/dr-girish-kumar-b-761186207/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="text-sm text-gray-400"> Girish Bhavekar Linkdin </a>
                             </div>
                         </div>
                     </div>
@@ -82,6 +81,7 @@ const Contact = () => {
                                 type="text"
                                 placeholder="Enter your name"
                                 className="w-full bg-[#103a62] text-white px-4 py-2 rounded outline-none focus:ring-2 focus:ring-sky-500"
+                                name="Name"
                             />
                         </div>
                         <div>
@@ -90,6 +90,7 @@ const Contact = () => {
                                 type="email"
                                 placeholder="Enter your email"
                                 className="w-full bg-[#103a62] text-white px-4 py-2 rounded outline-none focus:ring-2 focus:ring-sky-500"
+                                name="Email"
                             />
                         </div>
                         <div>
@@ -98,14 +99,15 @@ const Contact = () => {
                                 rows="5"
                                 placeholder="Your message"
                                 className="w-full bg-[#103a62] text-white px-4 py-2 rounded resize-none outline-none focus:ring-2 focus:ring-sky-500"
+                                name="Message"
                             ></textarea>
                         </div>
 
                         {/* reCAPTCHA widget */}
                         <HCaptcha
-                            sitekey="7174caaa-d6e6-43da-83b8-28c6f7f2369a" 
+                            sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2" 
                             onVerify={setToken}
-                            ref={hcaptchaRef}
+                            reCaptchaCompat={false}
                         />
 
                         <button

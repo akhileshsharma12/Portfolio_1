@@ -59,7 +59,7 @@ const Navbar = () => {
                 </button> */}
 
                 <a
-                    href="#contact"
+                    href="#contact-section"
                     className="hidden lg:flex items-center gap-3 px-10 border border-gray-500 rounded-full ml-4 text-xl"
                 >
                     Contact
@@ -85,9 +85,10 @@ const Navbar = () => {
                 <li><a href="#about"> About </a></li>
                 <li><a href="#software"> Tools Used </a></li>
                 <li><a href="#achievement"> Achievement </a></li>
-                <li><a href="#projects"> Projects </a></li>
+                <li><a href="#projects"> Patents </a></li>
                 <li><a href="#specialization"> Articles </a></li>
-                <li><a href="#contact"> Contact </a></li>
+                <li><a href="#research"> Research </a></li>
+                <li><a href="#contact-section"> Contact </a></li>
             </ul>
         </nav>
     );

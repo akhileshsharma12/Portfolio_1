@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -7,24 +8,27 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import conf1 from '@/assets/conf1.png';
+import conf3 from '@/assets/conf3.jpg';
+import conf4 from '@/assets/conf4.webp';
 
 const images = [
     {
-        src: '/work-1.png',
+        src: conf1,
         title: 'Electric Power and Renewable Energy Conference (EPREC)',
         date: '2020',
         location: 'NIT Jamshedpur',
         description: 'Presented innovations in renewable energy integration and smart grid systems.'
     },
     {
-        src: '/work-2.png',
+        src: conf3,
         title: '2nd IEEE International Conference on Electrical Power and Energy Systems (ICEPES)',
         date: '2021',
         location: 'SLIET (Central Institute CFTI)',
         description: 'Presented research on optimization techniques in electrical energy systems and smart grid reliability.'
     },
     {
-        src: '/work-3.png',
+        src: conf4,
         title: '3rd International Conference on Computational Electronics for Wireless Communications (ICCWC)',
         date: '22-23 Dec, 2023',
         location: 'NIT Jalandhar (Hybrid Mode)',
@@ -65,7 +69,7 @@ const Conference = () => {
                                     className="group relative w-full h-[280px] md:h-[420px] rounded-xl overflow-hidden cursor-pointer"
                                     onClick={() => toggleOverlay(index)}
                                 >
-                                    <img
+                                    <Image
                                         src={item.src}
                                         alt={`Conference Slide ${index + 1}`}
                                         className="w-full h-full object-cover rounded-xl"

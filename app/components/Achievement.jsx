@@ -4,6 +4,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 import award1 from '@/assets/award1.jpg';
 import award2 from '@/assets/award2.jpg';
+import award3 from '@/assets/award3.jpg';
 
 const projects = [
     {
@@ -19,7 +20,7 @@ const projects = [
     {
         title: 'Received Research Award / Appreciation',
         category: 'web design',
-        img: award1,
+        img: award3,
     },
 ];
 

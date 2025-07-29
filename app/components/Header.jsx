@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { assets } from '@/assets/assets';
 
+
 const Header = () => {
     return (
         <div id='home' className="w-full min-h-screen flex flex-col lg:flex-row px-4 sm:px-6 lg:px-20 justify-center items-center gap-10 text-center lg:text-left lg:pt-10">
@@ -10,7 +11,7 @@ const Header = () => {
             <div className="flex lg:flex-col gap-5 max-sm:gap-7 text-gray-600 list-none justify-center lg:justify-start max-sm:order-2">
                 <a href='https://scholar.google.com/citations?user=2binJeEAAAAJ&hl=en&oi=a' className='text-2xl text-sky-600'> <i className="fa-brands fa-google-scholar"></i> </a>
                 <a className='text-2xl text-sky-600' href='https://orcid.org/0000-0002-5084-0927'> <i className="fa-brands fa-orcid"></i> </a>
-                <a href='gbhavekar2020@gmail.com' className='text-2xl text-sky-600'> <i className="fa-brands fa-linkedin"></i> </a>
+                <a href='https://www.linkedin.com/in/dr-girish-kumar-b-761186207?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' className='text-2xl text-sky-600'> <i className="fa-brands fa-linkedin"></i> </a>
             </div>
 
             {/* Center - Profile Image */}
@@ -40,12 +41,20 @@ const Header = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-4 mt-6 justify-center lg:justify-start">
-                    <button id='contact' className="bg-sky-600 hover:bg-sky-700  text-white text-sm sm:text-lg px-6 py-2 sm:px-7 rounded-md transition cursor-pointer">
-                        Contact Me
-                    </button>
-                    <button className="text-sky-600 hover:bg-sky-100 border border-sky-600 text-sm sm:text-lg px-6 py-2 sm:px-7 rounded-md transition cursor-pointer">
+                    <a href="#contact-section">
+                        <button id='contact' className="bg-sky-600 hover:bg-sky-700  text-white text-sm sm:text-lg px-6 py-2 sm:px-7 rounded-md transition cursor-pointer">
+                            Contact Me
+                        </button>
+                    </a>
+
+                    <a
+                        href="/resume.pdf"
+                        download="resume.pdf"
+                        className="inline-block text-sky-600 hover:bg-sky-100 border border-sky-600 text-sm sm:text-lg px-6 py-2 sm:px-7 rounded-md transition cursor-pointer"
+                    >
                         Download Resume
-                    </button>
+                    </a>
+
                 </div>
             </div>
         </div>
