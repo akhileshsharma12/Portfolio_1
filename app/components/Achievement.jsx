@@ -30,7 +30,7 @@ const Achievement = () => {
             <div className="max-w-6xl mx-auto text-center">
                 <h2 className="text-3xl font-bold mt-2">My Achievements</h2>
                 <p className="text-gray-400 mt-4 max-w-xl mx-auto">
-                    Award-winning researcher in biomedical signal processing, Prof. Bhavekar's contributions are shaping the future of AI and ML in healthcare.
+                    Award-winning researcher in biomedical signal processing, Dr. Bhavekar's contributions are shaping the future of AI and ML in healthcare.
                 </p>
 
                 <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-12">

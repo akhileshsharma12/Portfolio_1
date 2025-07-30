@@ -4,16 +4,13 @@ import Image from 'next/image';
 const tools = [
     { name: "Blockchain", src: "/blockchain.png" },
     { name: "AWS", src: "/tools/aws.svg" },
-    // { name: "MATLAB", src: "/matlab.png" },
     { name: "Python", src: "/tools/python.svg" },
     { name: "LaTeX", src: "/latex.png" },
     { name: "EDA Playground", src: "/eda.png" },
     { name: "Arduino", src: "/arduino.png" },
     { name: "Python", src: "/tools/python.svg" },
-    // { name: "NVIDIA", src: "/nvidia-headset.png" },
     { name: "NVIDIA Logo", src: "/nvidia.png" },
     { name: "Blockchain", src: "/blockchain.png" },
-    // { name: "Multisim", src: "/multisim.png" },
     { name: "Deep Learning", src: "/tools/deeplearning.png" },
     { name: "Machine Learning", src: "/ml.png" }
 ];

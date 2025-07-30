@@ -15,7 +15,7 @@ const Header = () => {
             </div>
 
             {/* Center - Profile Image */}
-            <div className="flex justify-center max-sm:order max-sm:mt-5">
+            <div className="flex justify-center max-sm:order max-sm:mt-20">
                 <Image
                     src={assets.profile_img}
                     alt="Dr. Girish Bhavekar"

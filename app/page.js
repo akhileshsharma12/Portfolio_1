@@ -15,19 +15,19 @@ import ResearchPaper from "./components/ResearchPaper";
 
 export default function Home() {
   return (
-   <>
-    <Navbar />
-    <Header />
-    <ScrollToTopButton />
-    <About />
-    <ToolsUsed />
-    <Achievement />
-    <Patents />
-    <Conference />
-    <Articles />
-    <ResearchPaper />
-    <Contact />
-    <Footer />
-   </>
+    <>
+      <Navbar />
+      <Header />
+      <ScrollToTopButton />
+      <About />
+      <ToolsUsed />
+      <Achievement />
+      <Patents />
+      <Conference />
+      <Articles />
+      <ResearchPaper />
+      <Contact />
+      <Footer />
+    </>
   );
 }
