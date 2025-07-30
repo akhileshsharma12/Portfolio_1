@@ -106,7 +106,7 @@ const Articles = () => {
                     rel="noopener noreferrer"
                     className="inline-block px-6 py-3 bg-sky-600 hover:bg-sky-300 hover:text-sky-900 text-white rounded-lg font-medium transition duration-300"
                 >
-                    View Research Articles 📄
+                    View Articles 📄
                 </a>
             </div>
 
