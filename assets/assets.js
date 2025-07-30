@@ -11,13 +11,13 @@ import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './girish-img.jpg';
-import download_icon from './download-icon.png';
+
 import hand_icon from './hand-icon.png';
-import header_bg_color from './header-bg-color.png';
+
 import moon_icon from './moon_icon.png';
 import sun_icon from './sun_icon.png';
 import arrow_icon from './arrow-icon.png';
-import arrow_icon_dark from './arrow-icon-dark.png';
+
 import menu_black from './menu-black.png';
 import menu_white from './menu-white.png';
 import close_black from './close-black.png';
@@ -41,13 +41,11 @@ export const assets = {
     mail_icon,
     mail_icon_dark,
     profile_img,
-    download_icon,
+
     hand_icon,
-    header_bg_color,
     moon_icon,
     sun_icon,
     arrow_icon,
-    arrow_icon_dark,
     menu_black,
     menu_white,
     close_black,

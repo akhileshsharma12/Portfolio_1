@@ -16,7 +16,7 @@ const Contact = () => {
 
         const formData = new FormData(e.target);
 
-        formData.append("access_key", "fcfb63fb-44a3-4b2c-a20e-f6d05f1f98f2");
+        formData.append("access_key", "5a3f7773-9574-4c61-9826-47d25b0d7bdf");
         formData.append("h-captcha-response", token);
 
         const response = await fetch("https://api.web3forms.com/submit", {
@@ -30,7 +30,6 @@ const Contact = () => {
             alert("Form Submitted Successfully");
             e.target.reset();
             setToken("");
-            hcaptchaRef.current.resetCaptcha();
         } else {
             console.log("Error", data);
             alert("Error Submitting Form");

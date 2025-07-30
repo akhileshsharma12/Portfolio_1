@@ -4,6 +4,7 @@ import Image from "next/image";
 import { assets } from "@/assets/assets";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import Link from "next/link";
 
 
 const Navbar = () => {
@@ -38,9 +39,9 @@ const Navbar = () => {
                 }`}
         >
             <span>
-                <a className="text-2xl text-bolder  font-extrabold" href="#top">
+                <Link className="text-2xl text-bolder  font-extrabold" href="#top">
                     Girish Bhavekar
-                </a>
+                </Link>
             </span>
 
             <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 shadow-sm bg-opacity-50 text-lg">

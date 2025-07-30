@@ -25,10 +25,10 @@ const Header = () => {
 
             {/* Right Side - Text Content */}
             <div className="flex flex-col items-center lg:items-start max-w-xl px-2 sm:px-0 max-sm:order-[1]">
-                <h3 className="text-2xl sm:text-4xl lg:text-5xl font-medium flex items-center gap-2 sm:gap-3 flex-wrap justify-center lg:justify-start">
+                <h1 className="text-2xl sm:text-4xl lg:text-5xl font-medium flex items-center gap-2 sm:gap-3 flex-wrap justify-center lg:justify-start">
                     Hi, I'm Dr.
                     <span className="font-bold text-[#6EACDA] text-2xl sm:text-4xl lg:text-5xl">Girish Bhavekar</span>
-                </h3>
+                </h1>
 
                 <span className="text-lg sm:text-xl lg:text-2xl text-sky-500 mt-3">
                     Professor | Researcher | AI Specialist

@@ -47,7 +47,7 @@ const Conference = () => {
     return (
         <section id="conference" className="py-16 px-4 bg-[#182836] text-white relative">
             <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-3xl font-bold">Conferences</h2>
+                <h1 className="text-3xl font-bold">Conferences</h1>
                 <p className="text-gray-400 mt-2">Sessions & Talks Conducted</p>
 
                 <div className="mt-12 relative">
