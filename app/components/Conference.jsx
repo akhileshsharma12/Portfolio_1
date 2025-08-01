@@ -8,27 +8,24 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import conf1 from '@/assets/conf1.png';
-import conf3 from '@/assets/conf3.jpg';
-import conf4 from '@/assets/conf4.webp';
 
 const images = [
     {
-        src: conf1,
+        src: '/assets/conf1.png',
         title: 'Electric Power and Renewable Energy Conference (EPREC)',
         date: '2020',
         location: 'NIT Jamshedpur',
         description: 'Presented innovations in renewable energy integration and smart grid systems.'
     },
     {
-        src: conf3,
+        src: '/assets/conf3.png',
         title: '2nd IEEE International Conference on Electrical Power and Energy Systems (ICEPES)',
         date: '2021',
         location: 'SLIET (Central Institute CFTI)',
         description: 'Presented research on optimization techniques in electrical energy systems and smart grid reliability.'
     },
     {
-        src: conf4,
+        src: '/assets/conf4.webp',
         title: '3rd International Conference on Computational Electronics for Wireless Communications (ICCWC)',
         date: '22-23 Dec, 2023',
         location: 'NIT Jalandhar (Hybrid Mode)',
@@ -69,7 +66,7 @@ const Conference = () => {
                                     className="group relative w-full h-[280px] md:h-[420px] rounded-xl overflow-hidden cursor-pointer"
                                     onClick={() => toggleOverlay(index)}
                                 >
-                                    <Image
+                                    <img
                                         src={item.src}
                                         alt={`Conference Slide ${index + 1}`}
                                         className="w-full h-full object-cover rounded-xl"

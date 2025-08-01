@@ -27,7 +27,7 @@ const Footer = () => {
                     {/* Social Icons */}
                     <ul className="flex gap-5 text-sky-600 text-2xl">
                         <a href="https://threeartisans.com/" className="hover:text-sky-400 transition cursor-pointer">
-                            <i className="fa-solid fa-user" />
+                            <i className="fa-solid fa-globe" />
                         </a>
                         <a href="https://www.facebook.com/profile.php?id=61557918493838&mibextid=rS40aB7S9Ucbxw6v" className="hover:text-sky-400 transition cursor-pointer">
                             <i className="fab fa-facebook" />

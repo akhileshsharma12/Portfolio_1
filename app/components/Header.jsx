@@ -1,7 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { assets } from '@/assets/assets';
-
 
 const Header = () => {
     return (
@@ -16,8 +14,8 @@ const Header = () => {
 
             {/* Center - Profile Image */}
             <div className="flex justify-center max-sm:order max-sm:mt-20">
-                <Image
-                    src={assets.profile_img}
+                <img
+                    src='/assets/girish-img.png'
                     alt="Dr. Girish Bhavekar"
                     className="rounded-[50%_50%_48%_52%/34%_38%_62%_66%] w-56 sm:w-72 md:w-80 h-56 sm:h-72 md:h-80 border border-gray-500 object-cover"
                 />

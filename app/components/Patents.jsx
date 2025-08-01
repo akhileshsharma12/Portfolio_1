@@ -9,9 +9,6 @@ import 'swiper/css/pagination';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import patent1 from '@/assets/patent1.png';
-import patent2 from '@/assets/patent2.png';
-import patent3 from '@/assets/patent3.png';
 
 const projects = [
     {
@@ -19,7 +16,7 @@ const projects = [
         subtitle: 'Have a sip, survive the work week',
         buttonText: 'See our menu',
         type: 'Project 1',
-        image: patent1,
+        image: '/assets/patent1.png',
         description:
             'Indian Government Innovation patent Girish S Bhavekar,Dr. Agam Das Goswami on Heart Disease Prediction Model Based On Herding –Exploring Optimization Algorithm and Deep Learning Technique Published 04/2022 Dated 28/01/2022 Application No.202241001418.',
         link: 'https://search.ipindia.gov.in/IPOJournal/Journal/Patent',
@@ -29,7 +26,7 @@ const projects = [
         subtitle: 'Modern & Responsive',
         buttonText: 'View Portfolio',
         type: 'Project 2',
-        image: patent2,
+        image: '/assets/patent2.png',
         description:
             'Indian Government Innovation patent Girish S Bhavekar,Dr. Agam Das Goswami on Design & Development of ECG Classification Using Ensemble CNN and Bio-Inspired Computational Models Application Number: 202341039073',
         link: 'https://search.ipindia.gov.in/IPOJournal/Journal/Patent',
@@ -39,7 +36,7 @@ const projects = [
         subtitle: 'Modern & Responsive',
         buttonText: 'View Portfolio',
         type: 'Project 3',
-        image: patent3,
+        image: '/assets/patent3.png',
         description:
             'Indian Government Innovation patent Girish S Bhavekar,Dr. Agam Das Goswami on HEALTH MONITORING SYSTEM AND METHOD THEREOF Application Number: 202341063500 A 06-10-2023,',
         link: 'https://search.ipindia.gov.in/IPOJournal/Journal/Patent',
@@ -77,7 +74,7 @@ const Patents = () => {
                             <SwiperSlide key={index}>
                                 <div className="flex flex-col lg:flex-row items-center gap-10 px-3">
                                     <div className="w-full lg:w-1/2 h-[250px] lg:h-[350px] rounded-xl overflow-hidden shadow-md">
-                                        <Image
+                                        <img
                                             src={project.image}
                                             alt={project.title}
                                             className="w-full h-full object-cover"

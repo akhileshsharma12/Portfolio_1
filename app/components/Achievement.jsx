@@ -1,26 +1,22 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-
-import award1 from '@/assets/award1.jpg';
-import award2 from '@/assets/award2.jpg';
-import award3 from '@/assets/award3.jpg';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';   
 
 const projects = [
     {
         title: 'Raman Research Award',
         category: 'web design',
-        img: award1,
+        img: '/assets/award1.png',
     },
     {
         title: 'Bhau Anant Limaye Award',
         category: 'mobile app',
-        img: award2,
+        img: '/assets/award2.png',
     },
     {
         title: 'Received Research Award / Appreciation',
         category: 'web design',
-        img: award3,
+        img: '/assets/award3.png',
     },
 ];
 
@@ -38,7 +34,7 @@ const Achievement = () => {
                         <div
                             key={index}
                             className="rounded-xl h-85 flex flex-col justify-end relative overflow-hidden bg-cover bg-center transform transition duration-300 hover:scale-105 hover:shadow-2xl"
-                            style={{ backgroundImage: `url(${project.img.src})` }}
+                            style={{ backgroundImage: `url(${project.img})` }}
                         >
                             <div className="relative z-10 bg-white text-black rounded-md px-4 py-3 text-center flex justify-center items-center m-4">
                                 <p className="font-semibold text-sm text-[#021526]">{project.title}</p>
